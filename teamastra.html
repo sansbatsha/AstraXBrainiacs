@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styleforteam.css">
+
+    <title>Astra</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/7.png" alt="logo" style="width: 40px;height: 40px;margin-top: 4px;">Astra
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#teamheads" class="nav__link active-link">Team Heads</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="link.html" class="nav__link active-link">Back</a>
+                    </li>
+    
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+<!--==================== FEATURED ====================-
+        <section class="featured section" id="featured">
+            <h2 class="section__title" id="team" >
+                TEAM ARCHITECTURE
+            </h2>
+
+            <div class="featured__container container">
+                <ul class="featured__filters">
+                    <li>
+                        <button class="featured__item" data-filter=".captain">
+                            <span>Captain</span>
+                        </button>
+                    </li>
+                    
+                    <li>
+                        <button class="featured__item" data-filter=".tesla">
+                            <span>Design</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".tesla">
+                            <span>Mechanical</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".audi">
+                            <span>Electrical</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".porsche">
+                            <span>Innovation</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".porsche">
+                            <span>Autonomous    </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".porsche">
+                            <span>Dashboard</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter=".porsche">
+                            <span>Buisness</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="featured__item" data-filter="all">
+                            <span>All</span>
+                        </button>
+                    </li>
+                    
+                </ul>
+
+                <div class="featured__content grid">
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">ASTRA</h1>
+
+                        <h3 class="featured__subtitle">Captain</h3>
+
+                        <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$98,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Tesla</h1>
+
+                        <h3 class="featured__subtitle">Model 3</h3>
+
+                        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$45,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix audi">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Audi</h1>
+
+                        <h3 class="featured__subtitle">E-tron</h3>
+
+                        <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$175,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Boxster 987</h3>
+
+                        <img src="assets/img/featured4.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                    <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article> <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article> <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article> <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article> <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article> <article class="featured__card mix porsche">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">Porsche</h1>
+
+                        <h3 class="featured__subtitle">Panamera</h3>
+
+                        <img src="assets/img/featured5.png" alt="" class="featured__img">
+
+                        <h3 class="featured__price">$126,900</h3>
+
+                        <button class="button featured__button">
+                            <i class="ri-shopping-bag-2-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>-->
+        <!--==================== FEATURED ====================-->
+        <section class="featured section" id="featured">
+            <h2 class="section__title" id="home" >
+                TEAM ARCHITECTURE
+            </h2>
+            <div class="featured__content grid">
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">Captain</h3>
+
+                    <img src="assets/img/featured.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">AKSHAY JITH</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article>
+
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">VICE-CAPTAIN</h3>
+                    <img src="assets/img/featured\1.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">MIRTHULA</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article>  
+            </div>      
+            <h3 class="section__title" style="margin: 5rem;" id="teamheads">TEAM HEADS</h3>
+            <div class="featured__content grid">
+                
+                    <article class="featured__card mix tesla">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="featured__title">ASTRA</h1>
+
+                        <h3 class="featured__subtitle"> DESIGN HEAD</h3>
+                        <a href="#design">
+                        <img src="assets/img/feaured2.jpg" alt="" class="featured__img">
+                    </a>
+                        <h3 class="featured__price">ABHINANDHAN</h3>
+
+                        <button class="button featured__button">
+                            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                        </button>
+                    </article> 
+                
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle"> MECHANICAL HEAD</h3>
+                    <a href="#Mechanical">
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+                    </a>
+                    <h3 class="featured__price">KISHORE ANIRUTH</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">ELECTRICAL HEAD</h3>
+                    <a href="#electrical">
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+                </a>
+                    <h3 class="featured__price">AKSHAY JITH</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">AUTONOMOUS HEAD</h3>
+                    <a href="#Autonomous">
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+                </a>
+                    <h3 class="featured__price">MIRTHULA</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle"> INNOVATION HEAD</h3>
+                    <a href="#Innovation">
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+                </a>
+                    <h3 class="featured__price">SAMRITHA</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">BUISNESS HEAD</h3>
+                    <a href="#Buisness">
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+                </a>
+                    <h3 class="featured__price">RAGHAVI</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+            </section>
+        </div>
+
+        <h3 class="section__title" style="margin: 5rem;" id="design">DESIGN</h3>
+            <div class="featured__content grid">
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">Abhinandan G</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">Kishore Anirudh K</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">Harshavarthan B</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+
+            </section>
+        </div>
+        
+        <h3 class="section__title" style="margin: 5rem;" id="Mechanical"> MECHANICAL</h3>
+        <div class="featured__content grid">
+            
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Kishore Anirudh K-Suspension</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Abhinandan G-Suspension</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Guru Saran N-Suspension</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Antonsathya A C-Suspension</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Selvasriga B-Suspension</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Ineetha P-Steering</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Janani S-Steering</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Abishek K S-Steering</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Haritharan S-Steering</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Gowdham M-Steering</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Miruthula R-Transmisssion</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Navith Sanjay N-Transmission</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Santhosh R-Transmisssion</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Saranya S-Transmission</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Harshan D-Transmission</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Saran Sarvesh R-Brake</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Amoka B-Brake</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Hamsavarthini B-Brake</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Owshick J-Brake</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+        
+                <h1 class="featured__title">ASTRA</h1>
+        
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+        
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+        
+                <h3 class="featured__price">Lingesh R-Brake</h3>
+        
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article>
+
+        </section>
+    </div>
+    <h3 class="section__title" style="margin: 5rem;" id="electrical"> ELECTRICAL</h3>
+        <div class="featured__content grid">
+
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Akshay Jith P P-Power Train</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Abhinandan G-Power Train</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article>
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Amoka B-Power Train</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article>
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Miruthula R-Power Train</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article>
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Dhivya Dharshini R-Power Train</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Dhivya Dharshini R-Secondary System</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Hari Hara Sudan -Secondary System</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Ezhil Karthick K -Secondary System</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Raghavi R-Secondary System</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Yakhrevan S-Secondary System</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Antonsathya A C-Solar</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Amoka B-Solar</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Gopinath V-Solar</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Abishek S-Solar</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+    <article class="featured__card mix tesla">
+        <div class="shape shape__smaller"></div>
+
+        <h1 class="featured__title">ASTRA</h1>
+
+        <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+        <h3 class="featured__price">Soumiya-Solar</h3>
+
+        <button class="button featured__button">
+            <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+        </button>
+    </article> 
+
+</section>
+</div>
+<h3 class="section__title" style="margin: 5rem;" id="Autonomous">AUTONOMOUS</h3>
+            <div class="featured__content grid">
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">Harish T</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">MIRTHULA R</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price">Harishwar G</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+            </section>
+        </div>
+        <h3 class="section__title" style="margin: 5rem;" id="Innovation">INNOVATION</h3>
+        <div class="featured__content grid">
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Samritha Devi S</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Saran Sarvesh R</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Ineetha P</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article>
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Raaja Shri Varshini</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article> 
+            <article class="featured__card mix tesla">
+                <div class="shape shape__smaller"></div>
+
+                <h1 class="featured__title">ASTRA</h1>
+
+                <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                <h3 class="featured__price">Krittika S M</h3>
+
+                <button class="button featured__button">
+                    <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                </button>
+            </article>  
+        </section>
+    </div>
+    <h3 class="section__title" style="margin: 5rem;" id="Buisness">BUISNESS</h3>
+    <div class="featured__content grid">
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Amoka B-Sales and Marketing</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article> 
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Harish T-Sales and Marketing</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article> 
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Haritharan-Sales and Marketing</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Dhivya Dharshini R-Sales and marketing</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article> 
+        
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Ezhil Karthick K-Sales and Marketing</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>  
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Raghavi-Finance</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>  
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Miruthula R-Finance</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>  
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Akshay Jith P P-Finance</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>  
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Samritha Devi S-Finance</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>  
+        <article class="featured__card mix tesla">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="featured__title">ASTRA</h1>
+
+            <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+            <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+            <h3 class="featured__price">Kishore Anirudh K-Finance</h3>
+
+            <button class="button featured__button">
+                <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+            </button>
+        </article>  
+    </section>
+    </section>
+        </div>
+            <h3 class="section__title" style="margin: 5rem;" id="Autonomous">CREATIVE CREW</h3>
+            <div class="featured__content grid">
+                <article class="featured__card mix tesla">
+                    <div class="shape shape__smaller"></div>
+
+                    <h1 class="featured__title">ASTRA</h1>
+
+                    <h3 class="featured__subtitle">EDITION Twenty24</h3>
+
+                    <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                    <h3 class="featured__price"> SANS BATSHA 
+                         - WEBSITE CREATION AND MAINTANANCE</h3>
+
+                    <button class="button featured__button">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-line"></i></a>
+                    </button>
+                </article> 
+    </section>
+</div>
+            
+        <!--==================== LOGOS ====================-->
+        <!-- <section class="logos section">
+            <div class="logos__container container grid">
+                <div class="logos__content">
+                    <img src="assets/img/logo1.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/logo2.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/logo3.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/logo4.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/logo5.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/logo6.png" alt="" class="logos__img">
+                </div>
+            </div>
+        </section> -->
+        <section class="logos section"  id="SPONSERS">
+            <h2 class="section__title"  >
+                OUR SPONSERS           </h2>
+            <div class="logos__container container grid">
+                <div class="logos__content" >
+                    <img src="assets/img/3.jpg" alt="" class="featured__img" >
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/5.jpg" alt="" class="featured__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/6.jpg" alt="" class="featured__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="assets/img/4.png" alt="" class="featured__img">
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ====================
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-steering-line"></i> ASTRA
+                </a>
+                <p class="footer__description">
+                    We offer the best electric cars of <br>
+                    the most recognized brands in <br>
+                    the world.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Company
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Cars</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">History</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Shop</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Information
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Request a quote</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Find a dealer</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow us
+                </h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; Made with love for Astra<br> by SAN
+        </span>
+    </footer> -->
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img/7.png" alt="logo" style="width: 40px;height: 40px;"> ASTRA
+                </a>
+                <p class="footer__description">
+                    "Astra: where technical prowess meets camaraderie. <br>
+                    Our solar car team thrives on a foundation of <br>
+                    strong expertise and warm friendships. <br>
+                    Together, we're driving innovation and forging connections, 
+                    <br>powered by the sun."
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    TEAM
+                </h3> 
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="link.html" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="link.html" class="footer__link">Cars</a>
+                    </li>
+                    <li>
+                        <a href="link.html" class="footer__link">Prizes</a>
+                    </li>
+                    <li>
+                        <a href="#SPONSERS" class="footer__link">Sponsers</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="footer__content">
+                <h3 class="footer__title">
+                    Information
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Request a quote</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Find a dealer</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Services</a>
+                    </li>
+                </ul>
+            </div> -->
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Follow us
+                </h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/team_astra_skcet?igsh=MXF0aGpucHhra2duNQ==" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            <p>&#169;Astra</p>
+        </span>
+    </footer>
+
+
+
+
+    <!--========== SCROLL UP ==========-->
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP JS ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="jsforteam.js"></script>
+</body>
+
+</html>
