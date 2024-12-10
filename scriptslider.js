@@ -1,90 +1,52 @@
+let currentIndex = 0;
+const items = document.querySelectorAll(".carousel_item");
+const dots = document.querySelectorAll(".carousel_dot");
+const totalItems = items.length;
 
-let onSlide = false;
+// Initialize the carousel
+const initCarousel = () => {
+   // Mark the first dot as active
+   dots[currentIndex].classList.add("active");
 
-window.addEventListener("load", () => {
-   autoSlide();
+   // Auto-slide every 2 seconds
+   setInterval(() => nextSlide(), 2000);
 
-   const dots = document.querySelectorAll(".carousel_dot");
-   for (let i = 0; i < dots.length; i++) {
-      dots[i].addEventListener("click", () => slide(i));
-   }
+   // Add event listeners for navigation
+   document.querySelector(".carousel_button__next").addEventListener("click", nextSlide);
+   document.querySelector(".carousel_button__prev").addEventListener("click", prevSlide);
 
-   const buttonPrev = document.querySelector(".carousel_button__prev");
-   const buttonNext = document.querySelector(".carousel_button__next");
-   buttonPrev.addEventListener("click", () => slide(getItemActiveIndex() - 1));
-   buttonNext.addEventListener("click", () => slide(getItemActiveIndex() + 1));
-})
-
-function autoSlide() {
-   setInterval(() => {
-      slide(getItemActiveIndex() + 1);
-   }, 3000); // slide speed = 3s
-}
-
-function slide(toIndex) {
-   if (onSlide)
-      return;
-   onSlide = true;
-
-   const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-   const itemActive = document.querySelector(".carousel_item__active");
-   const itemActiveIndex = itemsArray.indexOf(itemActive);
-   let newItemActive = null;
-
-   if (toIndex > itemActiveIndex) {
-      // check if toIndex exceeds the number of carousel items
-      if (toIndex >= itemsArray.length) {
-         toIndex = 0;
-      }
-
-      newItemActive = itemsArray[toIndex];
-
-      // start transition
-      newItemActive.classList.add("carousel_item__pos_next");
-      setTimeout(() => {
-         newItemActive.classList.add("carousel_item__next");
-         itemActive.classList.add("carousel_item__next");
-      }, 20);
-   } else {
-      // check if toIndex exceeds the number of carousel items
-      if (toIndex < 0) {
-         toIndex = itemsArray.length - 1;
-      }
-
-      newItemActive = itemsArray[toIndex];
-
-      // start transition
-      newItemActive.classList.add("carousel_item__pos_prev");
-      setTimeout(() => {
-         newItemActive.classList.add("carousel_item__prev");
-         itemActive.classList.add("carousel_item__prev");
-      }, 20);
-   }
-
-   // remove all transition class and switch active class
-   newItemActive.addEventListener("transitionend", () => {
-      itemActive.className = "carousel_item";
-      newItemActive.className = "carousel_item carousel_item__active";
-      onSlide = false;
-   }, {
-      once: true
+   // Add event listeners for dots
+   dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => goToSlide(index));
    });
+};
 
-   slideIndicator(toIndex);
-}
+// Update carousel position
+const updateCarousel = () => {
+   const inner = document.querySelector(".carousel_inner");
+   inner.style.transform = `translateX(-${currentIndex * 100}%)`;
 
-function getItemActiveIndex() {
-   const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-   const itemActive = document.querySelector(".carousel_item__active");
-   const itemActiveIndex = itemsArray.indexOf(itemActive);
-   return itemActiveIndex;
-}
+   dots.forEach(dot => dot.classList.remove("active"));
+   dots[currentIndex].classList.add("active");
+};
 
-function slideIndicator(toIndex) {
-   const dots = document.querySelectorAll(".carousel_dot");
-   const dotActive = document.querySelector(".carousel_dot__active");
-   const newDotActive = dots[toIndex];
+// Go to next slide
+const nextSlide = () => {
+   currentIndex = (currentIndex + 1) % totalItems;
+   updateCarousel();
+};
 
-   dotActive.classList.remove("carousel_dot__active");
-   newDotActive.classList.add("carousel_dot__active");
-}
+// Go to previous slide
+const prevSlide = () => {
+   currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+   updateCarousel();
+};
+
+// Go to a specific slide
+const goToSlide = (index) => {
+   currentIndex = index;
+   updateCarousel();
+};
+
+// Initialize the carousel on page load
+window.addEventListener("load", initCarousel);
